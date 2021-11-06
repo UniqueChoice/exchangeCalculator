@@ -1,0 +1,40 @@
+/**index.less**/
+.base-panel .base-money-row {
+  display: flex;
+}
+.base-panel .base-label {
+  padding-left: 24px;
+}
+.base-panel .base-num-input {
+  text-align: right;
+  border-bottom: 1px solid lightgray;
+  width: 120px;
+}
+.top-divider {
+  border-top: 1px solid lightgray;
+}
+.money-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 16px;
+}
+.money-panel .img {
+  width: 72px;
+  height: 72px;
+}
+.money-panel .unit-label {
+  margin-left: 8px;
+}
+.money-panel .right-panel {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.money-panel .exchange-num-label {
+  text-align: right;
+  border-bottom: 1px solid lightgray;
+  width: 100px;
+}

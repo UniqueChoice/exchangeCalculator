@@ -1,0 +1,17 @@
+<!--pages/choose-base-money/choose-base-money.wxml-->
+<view class="container">
+    <view class="exchange-list">
+        <view wx:for="{{exchangeList}}" wx:key="key" class="money-panel top-divider" data-money-key="{{item.key}}"
+              bindtap="onChooseBaseMoney">
+            <image class="img" mode="aspectFit" src="{{'../../images/' + item.key + '.png'}}"></image>
+            <text class="unit-label">{{item.key}}</text>
+            <!--显示货币单位-->
+            <view class="right-panel">
+                <!--当curMoneyKey等于item.key时，显示为当前基础货币的标识-->
+                <text class="description-label" style="color: grey" wx:if="{{curMoneyKey === item.key}}">当前基础货币</text>
+                <!--显示货币名称-->
+                <text class="description-label">{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+</view>
